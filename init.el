@@ -6,10 +6,12 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
+;;关闭工具栏
 (tool-bar-mode -1)
 
 ;; 关闭文件滑动控件
 (scroll-bar-mode -1)
+
 ;; 显示行号
 (global-linum-mode 1)
 
@@ -19,11 +21,30 @@
 ;; 开启全局Company补全
 (global-company-mode 1)
 
+;; disable backup file
+(setq make-backup-files nil)
+
+;; 文档语法高亮
+(require 'org)
+(setq org-src-fontify-natively t)
+
+;; recent file mode
+(require 'recentf)
+(recentf-mode 1)
+(setq recentf-max-menu-items 25)
+(global-set-key "\C-x\ \C-r" 'recentf-open-files)
+
+;; when open emacs, then full windows display
+(setq initial-frame-alist (quote ((fullscreen . maximized))))
+
 ;; 关闭启动帮助画面
 (setq inhibit-splash-screen 1)
 
-;; 关闭缩进 (第二天中被去除)
-;; (electric-indent-mode -1)
+;; 自动缩进 (第二天中被去除)
+(electric-indent-mode t)
+
+;; 选中单词会 然后输入字母会进行替换
+(delete-selection-mode t)
 
 ;; 更改显示字体大小 16pt
 ;; http://stackoverflow.com/questions/294664/how-to-set-the-font-size-in-emacs
