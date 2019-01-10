@@ -25,6 +25,7 @@
 				 smartparens
 				 js2-mode
 				 nodejs-repl
+				 exec-path-from-shell
 	)  "Default packages")
 
 ;; package-selected-packages = zilongshanren/packages
@@ -33,7 +34,7 @@
 (defun zilongshanren/packages-installed-p ()
     (loop for pkg in zilongshanren/packages
           when (not (package-installed-p pkg)) do (return nil)
-          finally (return t)))
+	  finally (return t)))
 
 (unless (zilongshanren/packages-installed-p)
     (message "%s" "Refreshing package database...")
@@ -50,7 +51,6 @@
 (require 'smartparens-config)
 ;;(add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
 (smartparens-global-mode t)
-
 ;; config for swiper
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
@@ -65,6 +65,13 @@
       (append
        '(("\\.js\\'" . js2-mode))
        auto-mode-alist))
+ 
+;; config for nodejs-repl
+(require 'nodejs-repl)
+
+;; let emacs could find the execuable
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
 
 ;;关闭工具栏
 (tool-bar-mode -1)
@@ -115,6 +122,10 @@
 ;; load theme
 (load-theme 'monokai t) ;; monokai
 
+;;　config for agenda
+(setq org-agenda-files '("~/org"))
+(global-set-key (kbd "C-c a") 'org-agenda)
+
 ;; 更改显示字体大小 16pt
 ;; http://stackoverflow.com/questions/294664/how-to-set-the-font-size-in-emacs
 (set-face-attribute 'default nil :height 160)
@@ -123,6 +134,10 @@
 (defun open-init-file()
   (interactive)
   (find-file "~/.emacs.d/init.el"))
+
+(global-set-key (kbd "C-h C-f") 'find-function)
+(global-set-key (kbd "C-h C-v") 'find-variable)
+(global-set-key (kbd "C-h C-k") 'find-function-on-key)
 
 ;; 这一行代码，将函数 open-init-file 绑定到 <f2> 键上
 (global-set-key (kbd "<f2>") 'open-init-file)
