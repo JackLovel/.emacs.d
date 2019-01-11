@@ -47,6 +47,9 @@
 (require 'hungry-delete)
 (global-hungry-delete-mode)
 
+;;
+(global-auto-revert-mode t)
+
 ;; config for smartparens
 (require 'smartparens-config)
 ;;(add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
@@ -90,6 +93,9 @@
 
 ;; disable backup file
 (setq make-backup-files nil)
+
+;; disable auto save file
+(setq auto-save-default nil)
 
 ;; 文档语法高亮
 (require 'org)
