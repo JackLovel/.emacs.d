@@ -26,6 +26,7 @@
 				 js2-mode
 				 nodejs-repl
 				 exec-path-from-shell
+				 popwin
 	)  "Default packages")
 
 ;; package-selected-packages = zilongshanren/packages
@@ -116,6 +117,16 @@
 ;; 自动缩进 (第二天中被去除)
 (electric-indent-mode t)
 
+;; alias auto company, then enter "alias" + spase key
+(abbrev-mode t)
+(define-abbrev-table 'global-abbrev-table '(
+					    ;;signal
+					    ("8wc" "wangcongcong")
+					    ;; Macrosort
+					    ("8ms" "Macrosort")
+					    ))
+
+
 ;; 选中单词会 然后输入字母会进行替换
 (delete-selection-mode t)
 
@@ -147,6 +158,11 @@
 
 ;; 这一行代码，将函数 open-init-file 绑定到 <f2> 键上
 (global-set-key (kbd "<f2>") 'open-init-file)
+
+;; config for popwin
+(require 'popwin)
+(popwin-mode t)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
