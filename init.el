@@ -130,6 +130,20 @@
 ;; 选中单词会 然后输入字母会进行替换
 (delete-selection-mode t)
 
+;; 4 spaces as tab width
+;; if indent-tabs-mode is nil, indent only use spaces
+;; else use spaces and tab mixed
+(progn
+  (setq-default indent-tabs-mode t))
+
+(defun my-insert-tab-char ()
+  "Insert a tab char. (ASCII 9, \t)"
+  (interactive)
+  (insert "\t"))
+
+(global-set-key (kbd "TAB") 'my-insert-tab-char) 
+(setq-default tab-width 4)
+
 ;; match parentesis
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 
