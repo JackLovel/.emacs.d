@@ -1,82 +1,23 @@
-;; 关闭工具栏，tool-bar-mode 即为一个 Minor Mode
+(package-initialize)
 
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-
-;; when emacs version > 24, then add this melpa emacs source 
-;; source: 清华源
-(when (>= emacs-major-version 24)
-    (require 'package)
-    (package-initialize)
-    (add-to-list 'package-archives '("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/") t)
-    )
-
-(require 'cl)
-
-;;add what　ever packages you want here
-(defvar zilongshanren/packages '(
-				 company
-				 monokai-theme
-				 hungry-delete
-				 swiper
-				 counsel
-				 smartparens
-				 js2-mode
-				 nodejs-repl
-				 exec-path-from-shell
-				 popwin
-	)  "Default packages")
-
-;; package-selected-packages = zilongshanren/packages
-(setq package-selected-packages zilongshanren/packages)
-
-(defun zilongshanren/packages-installed-p ()
-    (loop for pkg in zilongshanren/packages
-          when (not (package-installed-p pkg)) do (return nil)
-	  finally (return t)))
-
-(unless (zilongshanren/packages-installed-p)
-    (message "%s" "Refreshing package database...")
-    (package-refresh-contents)
-    (dolist (pkg zilongshanren/packages)
-      (when (not (package-installed-p pkg))
-        (package-install pkg))))
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+(require 'init-packages)
 
 ;; hungry_delete: delete blank space 
 (require 'hungry-delete)
-(global-hungry-delete-mode)
 
-;;
-(global-auto-revert-mode t)
-
-;; config for smartparens
-(require 'smartparens-config)
-;;(add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
-(smartparens-global-mode t)
 ;; config for swiper
-(ivy-mode 1)
-(setq ivy-use-virtual-buffers t)
+
 (global-set-key "\C-s" 'swiper)
 (global-set-key (kbd "C-c C-r") 'ivy-resume)
 (global-set-key (kbd "C-x C-f") 'counsel-find-file)
 (global-set-key (kbd "C-h f") 'counsel-describe-function)
 (global-set-key (kbd "C-h v") 'counsel-describe-variable)
-
-;; config for js2-mode
-(setq auto-mode-alist
-      (append
-       '(("\\.js\\'" . js2-mode))
-       auto-mode-alist))
  
 ;; config for nodejs-repl
 (require 'nodejs-repl)
 
-;; let emacs could find the execuable
-(when (memq window-system '(mac ns))
-  (exec-path-from-shell-initialize))
-
+(global-auto-revert-mode t)
 ;;关闭工具栏
 (tool-bar-mode -1)
 
@@ -89,8 +30,7 @@
 ;; 更改光标的样式（不能生效，解决方案见第二集）
 (setq-default cursor-type 'bar)
 
-;; 开启全局Company补全
-(global-company-mode 1)
+
 
 ;; disable backup file
 (setq make-backup-files nil)
@@ -141,7 +81,7 @@
   (interactive)
   (insert "\t"))
 
-(global-set-key (kbd "TAB") 'my-insert-tab-char) 
+(global-set-key (kbd "TAB") 'my-insert-tab-char)
 (setq-default tab-width 4)
 
 ;; match parentesis
@@ -149,9 +89,6 @@
 
 ;; display current line
 (global-hl-line-mode t)
-
-;; load theme
-(load-theme 'monokai t) ;; monokai
 
 ;;　config for agenda
 (setq org-agenda-files '("~/org"))
@@ -161,6 +98,8 @@
 ;; http://stackoverflow.com/questions/294664/how-to-set-the-font-size-in-emacs
 (set-face-attribute 'default nil :height 160)
 
+;; 关闭声音
+(setq ring-bell-function 'ignore)
 ;; 快速打开配置文件
 (defun open-init-file()
   (interactive)
@@ -172,10 +111,6 @@
 
 ;; 这一行代码，将函数 open-init-file 绑定到 <f2> 键上
 (global-set-key (kbd "<f2>") 'open-init-file)
-
-;; config for popwin
-(require 'popwin)
-(popwin-mode t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
