@@ -5,7 +5,7 @@
     )
 
 ;;add what　ever packages you want here
-(defvar zilongshanren/packages '(
+(defvar JackLovel/packages '(
 				 company
 				 monokai-theme
 				 hungry-delete
@@ -18,19 +18,19 @@
 				 popwin
 	)  "Default packages")
 
-;; package-selected-packages = zilongshanren/packages
-(setq package-selected-packages zilongshanren/packages)
+;; package-selected-packages = JackLovel/packages
+(setq package-selected-packages JackLovel/packages)
 
 
-(defun zilongshanren/packages-installed-p ()
-    (loop for pkg in zilongshanren/packages
+(defun JackLovel/packages-installed-p ()
+    (loop for pkg in JackLovel/packages
           when (not (package-installed-p pkg)) do (return nil)
 	  finally (return t)))
 
-(unless (zilongshanren/packages-installed-p)
+(unless (JackLovel/packages-installed-p)
     (message "%s" "Refreshing package database...")
     (package-refresh-contents)
-    (dolist (pkg zilongshanren/packages)
+    (dolist (pkg JackLovel/packages)
       (when (not (package-installed-p pkg))
         (package-install pkg))))
 
