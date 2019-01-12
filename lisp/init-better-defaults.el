@@ -10,7 +10,7 @@
 (abbrev-mode t)
 (define-abbrev-table 'global-abbrev-table '(
 					    ;;signal
-					    ("8wc" "wangcongcong")
+					    ("8wc" "wangcc")
 					    ;; Macrosort
 					    ("8ms" "Macrosort")
 					    ))
