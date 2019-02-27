@@ -16,6 +16,7 @@
 				 nodejs-repl
 				 exec-path-from-shell
 				 popwin
+				 evil
 	)  "Default packages")
 
 ;; package-selected-packages = JackLovel/packages

@@ -9,6 +9,7 @@
 (require 'init-org)
 (require 'init-keybindings)
 (require 'init-python)
+(require 'init-evil)
 
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 
