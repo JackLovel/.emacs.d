@@ -17,6 +17,7 @@
 				 exec-path-from-shell
 				 popwin
 				 evil
+				 yasnippet  
 	)  "Default packages")
 
 ;; package-selected-packages = JackLovel/packages

@@ -10,6 +10,7 @@
 (require 'init-keybindings)
 (require 'init-python)
 (require 'init-evil)
+(require 'init-yasnippet)
 
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 
