@@ -6,7 +6,7 @@ my emacs configure
 
 
 *** Get help 
-#+BEGIN_SRC 
-1. emacs --debug-init
-2. [[https://www.emacswiki.org/emacs?interface=en][EmacsWiki]]
-#+END_SRC
+
+- emacs --debug-init
+- [[https://www.emacswiki.org/emacs?interface=en][EmacsWiki]]
+
