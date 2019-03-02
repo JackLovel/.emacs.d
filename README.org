@@ -1,0 +1,12 @@
+*** .emacs.d
+#+BEGIN_SRC 
+my emacs configure
+#+END_SRC
+
+
+
+*** Get help 
+#+BEGIN_SRC 
+1. emacs --debug-init
+2. [[EmacsWiki][https://www.emacswiki.org/emacs?interface=en]]
+#+END_SRC
