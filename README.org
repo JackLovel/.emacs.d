@@ -9,4 +9,7 @@ my emacs configure
 
 - emacs --debug-init
 - [[https://www.emacswiki.org/emacs?interface=en][EmacsWiki]]
+- C-h C-h
 
+*** Manual
+- C-h t
