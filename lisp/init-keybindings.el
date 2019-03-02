@@ -7,6 +7,10 @@
 ;; 这一行代码，将函数 open-init-file 绑定到 <f2> 键上
 (global-set-key (kbd "<f2>") 'open-init-file)
 
+;; 将函数 open-package-file 绑定到　<f3> 键上
+(global-set-key (kbd "<f3>") 'open-package-file)
+
+
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 
 (global-set-key (kbd "C-h C-f") 'find-function)
