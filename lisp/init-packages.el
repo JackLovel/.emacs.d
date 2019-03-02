@@ -17,7 +17,10 @@
 				 exec-path-from-shell
 				 popwin
 				 evil
-				 yasnippet  
+				 yasnippet
+				 elpy
+				 flycheck
+				 py-autopep8
 	)  "Default packages")
 
 ;; package-selected-packages = JackLovel/packages
@@ -60,7 +63,7 @@
 (global-company-mode t)
 
 ;; load theme monokai
-(load-theme 'monokai t) 
+(load-theme 'monokai t)
 
 ;; config for popwin
 (require 'popwin)

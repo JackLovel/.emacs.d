@@ -11,6 +11,9 @@
 (require 'init-python)
 (require 'init-evil)
 (require 'init-yasnippet)
+(require 'init-elpy)
+(require 'init-flycheck)
+(require 'init-py-autopep8)
 
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 
