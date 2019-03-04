@@ -9,8 +9,7 @@
 
 ;; set key binding
 (evil-leader/set-key
-  "e" 'find-file
-  "b" 'switch-to-buffer
-  "k" 'kill-buffer)
+  "f" 'find-file
+  "t" 'multi-term)
 
 (provide 'init-evil-leader)

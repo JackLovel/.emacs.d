@@ -22,6 +22,7 @@
 				 flycheck
 				 py-autopep8
 				 evil-leader
+				 multi-term
 	)  "Default packages")
 
 ;; package-selected-packages = JackLovel/packages

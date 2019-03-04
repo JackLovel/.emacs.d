@@ -15,7 +15,7 @@
 (require 'init-flycheck)
 (require 'init-py-autopep8)
 (require 'init-evil-leader)
-
+(require 'init-term-mode)
 
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 
