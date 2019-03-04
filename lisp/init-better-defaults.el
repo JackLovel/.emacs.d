@@ -26,6 +26,13 @@
 (recentf-mode t)
 (setq recentf-max-menu-items 25)
 
+(define-advice show-paren-function (:around (fn) fix-show-paren-function)
+  "Hightlight ecclosing parents"
+  (cond ((looking-at-p "\\s(") (funcall fn))
+	(t (save-excursion
+	     (ignore-errors (backward-up-list))
+	     (funcall fn)))))
+
 ;; match parentesis
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 
@@ -34,5 +41,18 @@
 
 ;; font-size: 16pt
 (set-face-attribute 'default nil :height 160)
+
+;; deal with "^M" in html page
+(defun hidden-dos-eol ()
+  "Do not show ^M in files containing mixed UNIX and EOS line endings."
+  (interactive)
+  (setq buffer-display-table (make-display-table))
+  (aset buffer-display-table ?\^M []))
+
+(defun remove-dos-col ()
+  "Replace DOS eolns CR LF with Unix eolns CR"
+  (interactive)
+  (goto-char (point-min))
+  (while (search-forward "\r" nil t) (replace-match "")))
 
 (provide 'init-better-defaults)

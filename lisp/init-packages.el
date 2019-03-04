@@ -21,6 +21,7 @@
 				 elpy
 				 flycheck
 				 py-autopep8
+				 evil-leader
 	)  "Default packages")
 
 ;; package-selected-packages = JackLovel/packages
@@ -49,6 +50,7 @@
 ;; config for smartparens
 ;;(add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
 (smartparens-global-mode t)
+(sp-local-pair 'emacs-lisp-mode "'" nil :actions nil)
 
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
