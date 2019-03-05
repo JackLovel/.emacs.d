@@ -16,6 +16,7 @@
 (require 'init-py-autopep8)
 (require 'init-evil-leader)
 (require 'init-term-mode)
+(require 'init-pomodoro)
 
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 

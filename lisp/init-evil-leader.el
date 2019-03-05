@@ -9,7 +9,8 @@
 
 ;; set key binding
 (evil-leader/set-key
-  "f" 'find-file
-  "t" 'multi-term)
+  ;;"f" 'find-file-in-project
+  "t" 'multi-term
+  "s" 'helm-do-ag-project-root)
 
 (provide 'init-evil-leader)

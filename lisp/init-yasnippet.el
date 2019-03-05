@@ -8,12 +8,12 @@
 ;; run `M+x yas-new-snippet` command
 ;; File names suffixed with `yasnippet`, exmaple: python3-head-format.yasnippet
 
- 
-
-
-
 (require 'yasnippet)
 
 (yas-global-mode t)
+
+;; use yasnippet only write code 
+(yas-reload-all)
+(add-hook 'prog-mode-hook #'yas-minor-mode)
 
 (provide 'init-yasnippet)

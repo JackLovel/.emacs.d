@@ -55,4 +55,6 @@
   (goto-char (point-min))
   (while (search-forward "\r" nil t) (replace-match "")))
 
+(set-language-environment "UTF-8")
+
 (provide 'init-better-defaults)
