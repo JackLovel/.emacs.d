@@ -9,6 +9,7 @@
  '(custom-safe-themes
    (quote
     ("bd7b7c5df1174796deefce5debc2d976b264585d51852c962362be83932873d9" default)))
+ '(evil-leader/leader ",")
  '(org-pomodoro-long-break-length 40))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

@@ -20,7 +20,7 @@
 (global-set-key (kbd "C-h C-v") 'find-variable)
 (global-set-key (kbd "C-h C-k") 'find-function-on-key)
 
-(global-set-key (kbd "C-c p f") 'counsel-git)
+;; (global-set-key (kbd "C-c p f") 'counsel-git)
 
 (global-set-key (kbd "C-c a") 'org-agenda)
 
@@ -38,5 +38,10 @@
 ;; config auto-yasnippet
 ;;(global-set-key (kbd "M-h w") #'aya-create)
 ;;(global-set-key (kbd "M-h y") #'aya-expand)
+
+;; 向前删除一个字符
+(global-set-key (kbd "C-w") 'backward-kill-word)
+
+
 
 (provide 'init-keybindings)

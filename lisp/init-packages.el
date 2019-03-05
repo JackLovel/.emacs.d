@@ -26,6 +26,10 @@
                                  org-pomodoro
 				 helm-ag
 				 auto-yasnippet
+                                 window-numbering
+				 powerline
+				 ;;evil-surround
+				 evil-nerd-commenter
 	)  "Default packages")
 
 ;; package-selected-packages = JackLovel/packages
@@ -75,5 +79,14 @@
 ;; config for popwin
 (require 'popwin)
 (popwin-mode t)
+
+;; config for evil-surround
+(require 'evil-surround)
+(global-evil-surround-mode 1)
+
+(evilnc-default-hotkeys)
+(define-key evil-normal-state-map (kbd "M-;") 'evilnc-comment-or-uncomment-lines)
+(define-key evil-visual-state-map (kbd "M-;") 'evilnc-comment-or-uncomment-lines)
+
 
 (provide 'init-packages)
