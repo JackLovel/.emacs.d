@@ -36,7 +36,7 @@
 ;; (global-set-key (kbd "C-c p s") 'helm-do-ag-project-root) 
 
 ;; config auto-yasnippet
-(global-set-key (kbd "M-h w") #'aya-create)
-(global-set-key (kbd "M-h y") #'aya-expand)
+;;(global-set-key (kbd "M-h w") #'aya-create)
+;;(global-set-key (kbd "M-h y") #'aya-expand)
 
 (provide 'init-keybindings)

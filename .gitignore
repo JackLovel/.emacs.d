@@ -1,3 +1,7 @@
 #bak file 
 *.el~
 auto-save-list
+gtd.org
+recentf
+smex-items
+abbrev_defs
