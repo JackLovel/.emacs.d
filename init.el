@@ -17,7 +17,11 @@
 (require 'init-evil-leader)
 (require 'init-term-mode)
 (require 'init-pomodoro)
+(require 'init-window-numbering)
+(require 'init-powerline)
 
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 
 (load-file custom-file)
+
+
