@@ -14,17 +14,19 @@
   "fr" 'recentf-open-files
   "pf" 'counsel-git
   "t" 'multi-term
-  "ps" 'helm-do-ag-project-root
+  "s" 'helm-do-ag-project-root
   "5" 'delete-window
   "bk" 'kill-buffer
   "1" 'select-window-1
   "bb" 'switch-to-buffer
-  "2" 'select-window-2 
+  "2" 'select-window-2
   "3" 'select-window-3
   "4" 'select-window-4
   "r" 'split-window-right
   "d" 'split-window-below
-  "wm" 'delete-other-windows)
-
+  "wm" 'delete-other-windows
+  "oo" 'org-todo
+  "jd" 'dired-jump ;; dired current directory
+  )
 
 (provide 'init-evil-leader)

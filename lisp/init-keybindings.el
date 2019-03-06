@@ -1,5 +1,5 @@
 ;; keybinding config store `init-keybindings.el` file
-;; and `init-evil-leader.el` file. 
+;; and `init-evil-leader.el` file.
 
 (global-set-key "\C-s" 'swiper)
 (global-set-key (kbd "C-c C-r") 'ivy-resume)
@@ -24,6 +24,14 @@
 
 (global-set-key (kbd "C-c a") 'org-agenda)
 
+;; 选中代码进行缩进
+(global-set-key (kbd "C-M-\\") 'indent-region-or-buffer)
+
+;;
+(global-set-key (kbd "C-\\") 'hippie-expand)
+
+
+
 (with-eval-after-load 'company
   (define-key company-active-map (kbd "M-p") nil)
   (define-key company-active-map (kbd "M-n") nil)
@@ -32,8 +40,8 @@
 
 
 ;; config helm-ag--init-state
-;; C-c e  // edit 
-;; (global-set-key (kbd "C-c p s") 'helm-do-ag-project-root) 
+;; C-c e  // edit
+;; (global-set-key (kbd "C-c p s") 'helm-do-ag-project-root)
 
 ;; config auto-yasnippet
 ;;(global-set-key (kbd "M-h w") #'aya-create)
@@ -43,5 +51,11 @@
 (global-set-key (kbd "C-w") 'backward-kill-word)
 
 
+;; RET(return key)
+(with-eval-after-load 'dired
+  (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file))
+
+;; 在 html 文件中切换　缩进为几
+(global-set-key (kbd "C-c t i") 'my-toggle-web-indent)
 
 (provide 'init-keybindings)

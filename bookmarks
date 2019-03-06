@@ -4,7 +4,7 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
  (filename . "~/.emacs.d/gtd.org")
- (front-context-string . "** TODO [#B] wat")
- (rear-context-string . "* TODO [#B]　录制\n\n")
- (position . 26))
+ (front-context-string . "** 写完　Flask web ")
+ (rear-context-string . "\n** TODO [#B] \n\n")
+ (position . 186))
 )
