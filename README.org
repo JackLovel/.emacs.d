@@ -13,3 +13,11 @@ my emacs configure
 
 *** Manual
 - C-h t
+
+*** org mode 
+#+BEGIN_SRC 
+- C-c C-s // start time
+- C-c C-d // end time 
+- C-c a   // open agenda
+- C-c r   // add plan 
+#+END_SRC
