@@ -19,6 +19,8 @@
 (require 'init-pomodoro)
 (require 'init-window-numbering)
 (require 'init-powerline)
+(require 'init-evil-surround)
+(require 'init-evil-nerd-commenter)
 
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 

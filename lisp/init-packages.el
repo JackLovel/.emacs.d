@@ -28,10 +28,10 @@
 				 auto-yasnippet
                                  window-numbering
 				 powerline
-				 ;;evil-surround
+				 evil-surround
 				 web-mode
 				 evil-nerd-commenter
-				 wanderlust
+				 ;;wanderlust
 	)  "Default packages")
 
 ;; package-selected-packages = JackLovel/packages
@@ -82,19 +82,7 @@
 (require 'popwin)
 (popwin-mode t)
 
-;; config for evil-surround
-(require 'evil-surround)
-(global-evil-surround-mode 1)
 
-;; config for evil-nerd-comment
-;; 一行或者多行注释
-;; 作者：https://github.com/redguardtoo/evil-nerd-commenter
-(evilnc-default-hotkeys)
-(define-key evil-normal-state-map (kbd "M-;") 'evilnc-comment-or-uncomment-lines)
-(define-key evil-visual-state-map (kbd "M-;") 'evilnc-comment-or-uncomment-lines)
-(global-set-key (kbd "C-c l") 'evilnc-quick-comment-or-uncomment-to-the-line)
-(global-set-key (kbd "C-c c") 'evilnc-copy-and-comment-lines)
-(global-set-key (kbd "C-c p") 'evilnc-comment-or-uncomment-paragraphs)
 
 ;; config js2-mode for js files
 (setq auto-mode-alist
@@ -104,7 +92,7 @@
 
 ;; config for web mode
 (defun my-web-mode-indent-setup()
-  (setq web-mode-markup-indent-offset 2)  ;; web-mode, html tag in html file 
+  (setq web-mode-markup-indent-offset 2)  ;; web-mode, html tag in html file
   (setq web-mode-css-indent-offset 2)     ;; web-mode, css in html file
   (setq web-mode-code-indent-offset 2)    ;; web-mode, js code in html fille
   )

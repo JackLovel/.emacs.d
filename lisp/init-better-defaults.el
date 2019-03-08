@@ -3,6 +3,10 @@
 
 (global-auto-revert-mode t)
 
+;; set scratch message
+(setq initial-scratch-message
+      ";; Happy Hacking!")
+
 ;; global line number
 (global-linum-mode t)
 
