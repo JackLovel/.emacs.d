@@ -31,7 +31,7 @@
 				 evil-surround
 				 web-mode
 				 evil-nerd-commenter
-				 ;;wanderlust
+				 company-tabnine
 	)  "Default packages")
 
 ;; package-selected-packages = JackLovel/packages
