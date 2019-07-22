@@ -19,7 +19,7 @@
 					    ("8ms" "Macrosort")
 					    ))
 
-;; disable backup file
+;; 关闭自动保存
 (setq make-backup-files nil)
 
 ;; disable auto save file
@@ -99,5 +99,14 @@
 ;; 进入当前文件夹所在的路径, C-x C-j 
 (require 'dired-x)
 (setq dired-dwim-target t)
+
+;; 关闭工具栏
+(tool-bar-mode -1)
+
+;; 关闭文件滑动控件
+(scroll-bar-mode -1)
+
+(setq-default cursor-type t)
+
 
 (provide 'init-better-defaults)

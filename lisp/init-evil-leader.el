@@ -36,6 +36,7 @@
   "cv" 'evilnc-toggle-invert-comment-line-by-line
   "."  'evilnc-copy-and-comment-operator
   "\\" 'evilnc-comment-operator ; if you prefer backslash key
+  "jd" 'dired-x
   )
 
 (provide 'init-evil-leader)
