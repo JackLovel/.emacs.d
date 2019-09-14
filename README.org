@@ -1,6 +1,6 @@
-*** .emacs.d
+*** Install
 #+BEGIN_SRC 
-my emacs configure
+$ cd; git clone https://github.com/JackLovel/.emacs.d.git
 #+END_SRC
 
 
