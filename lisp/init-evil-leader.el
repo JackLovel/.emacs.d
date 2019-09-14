@@ -26,7 +26,6 @@
   "d" 'split-window-below
   "wm" 'delete-other-windows
   "oo" 'org-todo
-  "jd" 'dired-jump ;; dired current directory
   "ci" 'evilnc-comment-or-uncomment-lines  ;; 注释一行
   "cl" 'evilnc-quick-comment-or-uncomment-to-the-line
   "ll" 'evilnc-quick-comment-or-uncomment-to-the-line
@@ -36,7 +35,7 @@
   "cv" 'evilnc-toggle-invert-comment-line-by-line
   "."  'evilnc-copy-and-comment-operator
   "\\" 'evilnc-comment-operator ; if you prefer backslash key
-  "jd" 'dired-x
+  "ip" 'dired-mode
   )
 
 (provide 'init-evil-leader)

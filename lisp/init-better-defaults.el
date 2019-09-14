@@ -108,5 +108,7 @@
 
 (setq-default cursor-type t)
 
+;; neotree
+(require 'neotree)
 
 (provide 'init-better-defaults)

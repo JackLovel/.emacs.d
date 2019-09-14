@@ -1,7 +1,11 @@
 (require 'cl)
 
 (when (>= emacs-major-version 24)
-    (add-to-list 'package-archives '("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/") t)
+  (add-to-list 'package-archives
+	       '(("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+		("org"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
+		("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/"))
+	        t)
     )
 
 ;;add what　ever packages you want here
@@ -31,7 +35,8 @@
 				 evil-surround
 				 web-mode
 				 evil-nerd-commenter
-				 company-tabnine
+				 ;;company-tabnine
+				 neotree
 	)  "Default packages")
 
 ;; package-selected-packages = JackLovel/packages

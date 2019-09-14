@@ -21,7 +21,6 @@
 (require 'init-powerline)
 (require 'init-evil-surround)
 (require 'init-evil-nerd-commenter)
-(require 'init-company-tabnine)
 
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 
