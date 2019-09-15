@@ -111,4 +111,24 @@
 ;; neotree
 (require 'neotree)
 
+;;; latex config: auctex
+;;(add-to-list 'load-path "/home/gog/.emacs.d/elpa/auctex-12.1.2/tests/japanese/")
+(load "auctex.el" nil t t)
+(setq TeX-auto-save t)
+(setq TeX-parse-self t)
+(setq-default TeX-master nil)
+;;(load "preview-latex.el" nil t t)
+
+;; xelatex编译配置
+;; 使用 okular 来查看 pdf
+(setq TeX-view-program-list '(("okular" "okular %o")))
+(setq TeX-view-program-selection '((output-pdf "okular")))
+(add-hook 'LaTeX-mode-hook
+  (lambda()
+  (add-to-list 'TeX-command-list '("XeLaTeX" "%`xelatex%(mode)%' %t" TeX-run-TeX nil t))
+  (setq TeX-command-default "XeLaTeX")
+  (setq TeX-save-querynil )
+  (setq TeX-show-compilation t)
+  ))
+
 (provide 'init-better-defaults)

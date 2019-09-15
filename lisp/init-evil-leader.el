@@ -36,6 +36,7 @@
   "."  'evilnc-copy-and-comment-operator
   "\\" 'evilnc-comment-operator ; if you prefer backslash key
   "ip" 'dired-mode
+  "jd" 'dired-jump ;; open the dired from current file
   )
 
 (provide 'init-evil-leader)

@@ -2,9 +2,7 @@
 
 (when (>= emacs-major-version 24)
   (add-to-list 'package-archives
-	       '(("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-		("org"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
-		("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/"))
+	       '("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
 	        t)
     )
 
@@ -37,6 +35,7 @@
 				 evil-nerd-commenter
 				 ;;company-tabnine
 				 neotree
+				 auctex
 	)  "Default packages")
 
 ;; package-selected-packages = JackLovel/packages
