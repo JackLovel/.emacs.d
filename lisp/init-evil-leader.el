@@ -39,6 +39,12 @@
   "jd" 'dired-jump ;; open the dired from current file
   ;; magit 
   "ggg" 'magit-status
-  )
+  ;; neotree
+  "ntt" 'neotree-toggle
+  ;"ntf" 'neotree-find ; open file in current buffer in neotree
+  "ntd" 'neotree-project-dir
+  "nth" 'neotree-hide
+  "nts" 'neotree-show
+)
 
 (provide 'init-evil-leader)
