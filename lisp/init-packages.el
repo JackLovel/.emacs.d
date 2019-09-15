@@ -36,6 +36,7 @@
 				 ;;company-tabnine
 				 neotree
 				 auctex
+				 magit
 	)  "Default packages")
 
 ;; package-selected-packages = JackLovel/packages

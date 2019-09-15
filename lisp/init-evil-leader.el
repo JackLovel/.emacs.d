@@ -37,6 +37,8 @@
   "\\" 'evilnc-comment-operator ; if you prefer backslash key
   "ip" 'dired-mode
   "jd" 'dired-jump ;; open the dired from current file
+  ;; magit 
+  "ggg" 'magit-status
   )
 
 (provide 'init-evil-leader)
