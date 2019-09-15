@@ -22,6 +22,7 @@
 (require 'init-evil-surround)
 (require 'init-evil-nerd-commenter)
 (require 'init-auto-save)
+;;(require 'init-qt)
 
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 

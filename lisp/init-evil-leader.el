@@ -45,6 +45,7 @@
   "ntd" 'neotree-project-dir
   "nth" 'neotree-hide
   "nts" 'neotree-show
+  "fr" 'recentf-open-files
 )
 
 (provide 'init-evil-leader)
