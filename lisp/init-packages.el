@@ -37,6 +37,8 @@
 				 neotree
 				 auctex
 				 magit
+				 
+				 robe
 	)  "Default packages")
 
 ;; package-selected-packages = JackLovel/packages

@@ -14,7 +14,7 @@
   "fr" 'recentf-open-files
   "pf" 'counsel-git
   "t" 'multi-term
-  "s" 'helm-do-ag-project-root
+  "ps" 'helm-do-ag-project-root
   "5" 'delete-window
   "bk" 'kill-buffer
   "1" 'select-window-1
