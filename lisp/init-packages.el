@@ -37,8 +37,11 @@
 				 neotree
 				 auctex
 				 magit
-				 
 				 robe
+				 flymake-ruby
+				 inf-ruby
+				 projectile
+				 flx-ido
 	)  "Default packages")
 
 ;; package-selected-packages = JackLovel/packages

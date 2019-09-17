@@ -1,0 +1,1 @@
+("~/mayun/rails_example/" "~/.emacs.d/")
