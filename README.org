@@ -3,17 +3,6 @@
 $ cd; git clone https://github.com/JackLovel/.emacs.d.git
 #+END_SRC
 
-
-
-*** Get help 
-
-- emacs --debug-init
-- [[https://www.emacswiki.org/emacs?interface=en][EmacsWiki]]
-- C-h C-h
-
-*** Manual
-- C-h t
-
 *** org mode
 - agenda 
 #+BEGIN_SRC 
