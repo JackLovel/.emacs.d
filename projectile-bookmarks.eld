@@ -1,1 +1,1 @@
-("~/mayun/rails_example/" "~/.emacs.d/")
+("~/.emacs.d/" "~/mayun/rails_example/")

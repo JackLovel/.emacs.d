@@ -1,4 +1,4 @@
-;; document syntax highlighting
+; document syntax highlighting
 (with-eval-after-load 'org
   ;;　config for agenda
   (setq org-agenda-files '("~/.emacs.d")) 
