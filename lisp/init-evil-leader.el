@@ -9,7 +9,7 @@
   "fr" 'recentf-open-files
   "pf" 'counsel-git
   "t" 'multi-term
-  ;;"ps" 'helm-do-ag-project-root # 查找文件
+  "sp" 'helm-do-ag-project-root ;; 查找文件
   "5" 'delete-window
   "bk" 'kill-buffer
   "1" 'select-window-1
@@ -45,6 +45,7 @@
   "br" 'inf-ruby ;; inside ruby shell 
   ;;"bv" 'rvm-activate-corresponding-ruby
   "ps" 'projectile-find-file
+  "pd" 'projectile-find-dir ;; find current directory 
 )
 
 (provide 'init-evil-leader)

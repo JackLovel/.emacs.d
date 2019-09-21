@@ -1,10 +1,10 @@
-;;;; Emacs Bookmark Format Version 1 ;;;;
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8 -*- 
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
  (filename . "~/.emacs.d/gtd.org")
- (front-context-string . "** 写完　Flask web ")
- (rear-context-string . "\n** TODO [#B] \n\n")
- (position . 186))
+ (front-context-string . "** TODO [#B] \n测试")
+ (rear-context-string)
+ (position . 9))
 )
