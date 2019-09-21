@@ -2,12 +2,3 @@
 #+BEGIN_SRC 
 $ cd; git clone https://github.com/JackLovel/.emacs.d.git
 #+END_SRC
-
-*** org mode
-- agenda 
-#+BEGIN_SRC 
-- C-c C-s // start time
-- C-c C-d // end time 
-- C-c a   // open agenda
-- C-c r   // add plan 
-#+END_SRC
