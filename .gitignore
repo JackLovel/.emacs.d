@@ -1,10 +1,8 @@
-#bak file 
 *.el~
 auto-save-list
 gtd.org
 recentf
 smex-items
 abbrev_defs
-
-# elpa 
+.lsp-session-v1
 elpa/
