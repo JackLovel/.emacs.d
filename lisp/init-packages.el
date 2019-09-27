@@ -42,6 +42,9 @@
 				 inf-ruby
 				 projectile
 				 flx-ido
+				 org-preview-html
+				 ;;eglot ;; lsp
+				 lsp-mode
 	)  "Default packages")
 
 ;; package-selected-packages = JackLovel/packages

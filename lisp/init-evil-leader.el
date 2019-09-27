@@ -15,6 +15,7 @@
   "1" 'select-window-1
   "bb" 'switch-to-buffer
   "x0" 'delete-window
+  "wo" 'other-window
   "2" 'select-window-2
   "3" 'select-window-3
   "4" 'select-window-4

@@ -6,8 +6,8 @@
 ;; robe
 (require 'robe)
 (add-hook 'ruby-mode-hook 'robe-mode)
-(global-company-mode t)
-(push 'company-robe company-backends)
+(eval-after-load 'company
+  '(push 'company-robe company-backends))
 
 ;; projectile
 (projectile-global-mode) ;;全局使用

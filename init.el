@@ -23,6 +23,7 @@
 (require 'init-evil-nerd-commenter)
 (require 'init-auto-save)
 (require 'init-ruby)
+(require 'init-lsp)
 
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 

@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/mayun/rails_example/")
+("~/.emacs.d/" "~/mayun/RailsDemo/depot/" "~/mayun/RailsDemo/demo/" "~/codePro/JackLovel.github.io/" "~/mayun/QtDemo/" "~/mayun/ColorPicker/" "~/mayun/DtkDemo/" "~/mayun/Notepad/" "~/IdeaProjects/DockerDemo/" "~/mayun/calculator/" "~/mayun/flaskweb_development_practice/" "~/mayun/bluelog/" "~/codePro/Note/" "~/mayun/flask_demo/albumy/" "~/mayun/rails_example/")
