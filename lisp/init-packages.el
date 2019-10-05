@@ -45,6 +45,7 @@
 				 org-preview-html
 				 ;;eglot ;; lsp
 				 lsp-mode
+				 emmet-mode
 	)  "Default packages")
 
 ;; package-selected-packages = JackLovel/packages

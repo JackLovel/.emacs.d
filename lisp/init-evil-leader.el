@@ -47,6 +47,7 @@
   ;;"bv" 'rvm-activate-corresponding-ruby
   "ps" 'projectile-find-file
   "pd" 'projectile-find-dir ;; find current directory 
+  "xf" 'counsel-find-file
 )
 
 (provide 'init-evil-leader)

@@ -24,6 +24,7 @@
 (require 'init-auto-save)
 (require 'init-ruby)
 (require 'init-lsp)
+(require 'init-web)
 
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 
