@@ -1,3 +1,5 @@
+;; require: web-mode, tern, emmet, js2-mode, flycheck 
+
 (require 'web-mode)
 (require 'emmet-mode)
 
@@ -33,5 +35,7 @@
 (add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 2))) ;; indent 2 spaces
 (setq emmet-move-cursor-after-expanding nil) ;; default t
 (setq emmet-self-closing-tag-style " /")
+
+(add-hook 'web-mode-hook 'emmet-mode)
 
 (provide 'init-web)
