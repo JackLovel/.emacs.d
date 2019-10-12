@@ -46,6 +46,7 @@
 				 ;;eglot ;; lsp
 				 lsp-mode
 				 emmet-mode
+				 ;;tern
 	)  "Default packages")
 
 ;; package-selected-packages = JackLovel/packages

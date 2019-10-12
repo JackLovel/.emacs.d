@@ -3,8 +3,15 @@
 (require 'web-mode)
 (require 'emmet-mode)
 
-(add-to-list 'auto-mode-alist '("\\.jsp$" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.html?$" . web-mode))
+;;; web mode
+(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 
 (defun my-web-mode-hook ()
   ;; indent 
@@ -28,11 +35,12 @@
 (add-hook 'web-mode-hook 'my-web-mode-hook)
 
 ;; emmet 
-
+(add-hook 'web-mode-hook 'emmet-mode)
 (add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
 (add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
-(add-hook 'web-mode-hook 'emmet-mode)
 (add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 2))) ;; indent 2 spaces
+
+;; press C-j expand snippet
 (setq emmet-move-cursor-after-expanding nil) ;; default t
 (setq emmet-self-closing-tag-style " /")
 
