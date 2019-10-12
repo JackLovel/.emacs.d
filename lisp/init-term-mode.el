@@ -11,7 +11,7 @@
 (ad-activate 'term-sentinel)
 
 ;; always use bash
-(defvar my-term-program "/bin/bash")
+(defvar my-term-program "/bin/zsh") ;; set shell 
 (defadvice ansi-term (before force-bash)
   (interactive (list my-term-program)))
 (ad-activate 'ansi-term)
