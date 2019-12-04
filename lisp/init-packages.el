@@ -1,10 +1,10 @@
 (require 'cl)
 
-(when (>= emacs-major-version 24)
-  (add-to-list 'package-archives
-	       '("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-	        t)
-    )
+ (when (>= emacs-major-version 24)
+     (require 'package)
+     (package-initialize)
+     (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
+		      ("melpa" . "http://elpa.emacs-china.org/melpa/"))))
 
 ;;add what　ever packages you want here
 (defvar JackLovel/packages '(

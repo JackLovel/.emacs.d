@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/mayun/RailsExample/" "~/mayun/blog/" "~/mayun/blog2/" "~/mayun/Notepad/" "~/mayun/excuse_demo/" "~/.config/nvim/" "~/codePro/rails-example/demo1/" "~/codePro/use_git/" "~/codePro/use_deepin/" "~/codePro/excuise-/" "~/mayun/QtDemo/" "~/mayun/Notepad-Python/" "~/codePro/JackLovel.github.io/" "~/mayun/ColorPicker/" "~/mayun/DtkDemo/" "~/IdeaProjects/DockerDemo/" "~/mayun/calculator/" "~/mayun/flaskweb_development_practice/" "~/mayun/bluelog/" "~/codePro/Note/" "~/mayun/flask_demo/albumy/" "~/mayun/rails_example/")
+("~/.emacs.d/")
