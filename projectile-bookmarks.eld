@@ -1,1 +1,1 @@
-("~/.emacs.d/")
+("~/codePro/blog/" "~/.emacs.d/" "~/codePro/railsdemoali/" "~/下载/278-search-with-sunspot/blog-after/")

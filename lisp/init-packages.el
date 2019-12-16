@@ -47,6 +47,7 @@
 				 lsp-mode
 				 emmet-mode
 				 ;;tern
+				 dockerfile-mode
 	)  "Default packages")
 
 ;; package-selected-packages = JackLovel/packages
