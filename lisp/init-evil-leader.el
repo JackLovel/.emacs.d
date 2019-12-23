@@ -48,6 +48,7 @@
   "ps" 'projectile-find-file
   "pd" 'projectile-find-dir ;; find current directory 
   "xf" 'counsel-find-file
+  "fh" 'indent-buffer ;; format html page
 )
 
 (provide 'init-evil-leader)
