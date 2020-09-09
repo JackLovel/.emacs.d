@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/桌面/docker/upload_flle/" "~/桌面/docker/auth_kk/" "~/桌面/docker/auth_demo/" "~/桌面/docker/js_demo/" "~/桌面/docker/api_demo/" "~/codePro/excuise-/" "~/桌面/docker/docker_demo/" "~/桌面/docker/demo1/" "~/codePro/blog/" "~/codePro/railsdemoali/" "~/下载/278-search-with-sunspot/blog-after/")
+("~/.emacs.d/")
