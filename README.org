@@ -1,7 +1,0 @@
-*** Install
-#+BEGIN_SRC 
-$ cd; git clone https://github.com/JackLovel/.emacs.d.git
-#+END_SRC
-
-*** reference 
-[[http://book.emacs-china.org/#orgheadline1][子龙山人的教程]]
