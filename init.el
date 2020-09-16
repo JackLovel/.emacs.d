@@ -25,6 +25,7 @@
 (require 'init-lsp)
 (require 'init-web)
 (require 'init-docker)
+(require 'init-latex)
 
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 
